@@ -6,21 +6,28 @@
 # Use input to collect each word to a variable
 # Use an f string to display the story
 
-adj_1 = input("Please enter an adjective")
-noun_1 = input("Please input a noun.")
-adj_2 = input("Please enter an adjective")
-noun_2 = input("Please input a noun.")
-verb_1 = input("Please input a verb in past tense.")
-adverb_1 = input("Please input an adverb.")
-exclaim_1 = input("Please input an exclaimation.")
+adj_def = "Please enter an adjective. (Beautiful, Horrific, etc.)"
+noun_def = "Please enter a common noun. (Prince, Rock, etc.)"
+
+print(""" 
+Welcome to the Madlib! Please enter a unique response to each of the following prompts, followed by the enter key to create your one-of-a-kind madlib story!
+""")
+      
+adj_1 = input(adj_def)
+noun_1 = input(noun_def)
+adj_2 = input(adj_def)
+noun_2 = input(noun_def)
+verb_1 = input("Please input a movement verb in the past tense. (Ran, Rolled, etc.)")
+verb_2 = input("Please input any verb in the past tense. (Kicked, Coughed, etc.)")
+adverb_1 = input("Please input an adverb ending in -ly. (Quickily, Softly, etc.)")
+exclaim_1 = input("Please input an exclamatory sentence. (Great Job!, Go Away!, etc.)")
 
 # Your madlib must collect at least 6 words!
 print(f"""
-      Once upon a time, a {adj_1} {noun_1} lived isolated in a {adj_2} castle. 
-      One day, the {adj_1} {noun_1} saw a {noun_2} outside their window.
-      Excited to see something, the {noun_1} {verb_1} {adverb_1} at the {noun_2}.
-      Startled, the {noun_2} shouted '{exclaim_1}' and fled. They warned everyone to stay away from the castle.
-      Nobody dared visit the {noun_1} at their castle ever again.""")
+      Once upon a time, one {adj_1} {noun_1} lived atop a hill in an old, {adj_2} cabin. 
+      One day, the {adj_1} {noun_1} saw a suspicious {noun_2} from their window.
+      Startled, the {noun_1} {verb_1} outside. The {noun_2} {verb_2} {adverb_1} at the {noun_2}.
+      Startled, the {noun_2} shouted '{exclaim_1}' and fled away.""")
 
 
 
